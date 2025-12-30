@@ -3,33 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremiah Olubanjo | Icon</title>
+    <title>Jeremiah Olubanjo | The Icon</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #0f172a; color: #ffffff; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background-color: #1e293b; padding: 30px; border-radius: 16px; border-top: 5px solid #ffd700; max-width: 350px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; }
-        h1 { color: #ffd700; margin: 0; font-size: 1.6rem; text-transform: uppercase; }
-        .tagline { color: #94a3b8; font-size: 0.8rem; margin: 10px 0 20px 0; letter-spacing: 1px; }
-        .bio { line-height: 1.6; font-size: 1rem; border-top: 1px solid #334155; border-bottom: 1px solid #334155; padding: 20px 0; margin-bottom: 20px; text-align: left; }
-        .interests-title { color: #ffd700; font-size: 0.9rem; font-weight: bold; margin-bottom: 10px; display: block; }
-        ul { list-style: none; padding: 0; margin: 0; }
-        li { background: #334155; margin: 5px 0; padding: 10px; border-radius: 8px; font-size: 0.9rem; }
-        .footer { margin-top: 25px; font-size: 0.7rem; color: #64748b; }
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #050505;
+            --card-bg: #111111;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--dark-bg);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid #222;
+            border-top: 6px solid var(--gold);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            border-radius: 4px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--gold);
+            margin-bottom: 20px;
+            background-color: #222;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        h1 {
+            color: var(--gold);
+            font-size: 2.2rem;
+            margin: 10px 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .tagline {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+        .bio {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            padding: 25px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .bio::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--gold);
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            opacity: 0.2;
+        }
+        .section-title {
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px 0;
+            border-bottom: 1px solid #222;
+            color: #bbb;
+        }
+        .matric {
+            margin-top: 40px;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="container">
+        <!-- IMAGE SECTION -->
+        <img src="20251113_141746.jpg" alt="Jeremiah Olubanjo" class="profile-img" onerror="this.src='https://via.placeholder.com/150/d4af37/000000?text=ICON'">
+        
         <h1>Jeremiah Olubanjo</h1>
-        <div class="tagline">ENTREPRENEUR | NATION BUILDER | STUDENT</div>
+        <div class="tagline">Entrepreneur | Nation Builder | Student</div>
+
+        <span class="section-title">The Vision</span>
         <div class="bio">
             I am Icon. I hate many things and don't particularly like a lot of things. One day I will be the Richest man in the world and will take Nigeria from 3rd world to first world. What I have is not a dream, for I will make it a reality.
         </div>
-        <span class="interests-title">Interests & Skills</span>
+
+        <span class="section-title">Hustle & Hobbies</span>
         <ul>
-            <li>Deep Intellectual & Business Conversations</li>
-            <li>Reading</li>
-            <li>Sales</li>
+            <li>Intellectual Business Strategy</li>
+            <li>Historical & Financial Literature</li>
+            <li>Mastery of Sales</li>
         </ul>
-        <div class="footer">Matric No: BU24CSC2007</div>
+
+        <div class="matric">ID: BU24CSC2007</div>
     </div>
 </body>
 </html>
+
